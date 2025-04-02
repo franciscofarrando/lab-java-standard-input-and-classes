@@ -1,17 +1,24 @@
 package org.example;
 
 public class Employee {
-    protected String name;
-    protected String email;
-    protected int age;
-    protected int salary;
+    private String name;
+    private String email;
+    private int age;
+    private int salary;
+
 //Metodo constructor
+public Employee(int age, String email, String name) {
+    this.age = age;
+    this.email = email;
+    this.name = name;
+}
     public Employee(int salary, int age, String email, String name) {
         this.salary = salary;
         this.age = age;
         this.email = email;
         this.name = name;
     }
+
 //Getters
     public String getName() {
         return name;
@@ -28,6 +35,7 @@ public class Employee {
     public int getSalary() {
         return salary;
     }
+
 //Setters
     public void setName(String name) {
         this.name = name;
